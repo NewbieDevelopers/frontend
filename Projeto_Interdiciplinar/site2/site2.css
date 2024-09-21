@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #333;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #A14C0C;
+    padding: 10px 20px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.navbar .logo {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navbar .user-name {
+    color: white;
+}
+
+.navbar-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.navbar-icons img {
+    width: 24px;
+    height: 24px;
+}
+
+.navbar-icons a {
+    color: white;
+    text-decoration: none;
+}
+
+.aulas-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+
+.aula {
+    background-color: #444;
+    border: 1px solid #ff6200;
+    border-radius: 8px;
+    width: 300px;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+.aula:hover {
+    transform: scale(1.05);
+}
+
+.aula img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.aula-title {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.assistir-btn {
+    background-color: #ff6200;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.assistir-btn:hover {
+    background-color: #e55a00;
+}
+
+.anuncios-container {
+    background-color: #555;
+    padding: 20px;
+    text-align: center;
+    margin: 20px;
+    border-radius: 8px;
+}
+
+.anuncios-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.anuncios-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
