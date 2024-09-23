@@ -5,6 +5,11 @@ body {
     background-color: #333;
     color: #fff;
 }
+.container_ei {
+    max-width: 1400px; /* Ajuste conforme necessário */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    padding: 0 20px; /* Adiciona um pequeno espaçamento lateral */
+}
 /* header {
 background-color: #FF8C00;
 padding: 20px 0;
@@ -111,9 +116,14 @@ justify-content: flex-end;
 }
 
 .course-info {
-display: flex;
-padding: 40px;
 background-color: #444;
+}
+
+.maior{
+    display: flex;
+    padding: 40px;
+    max-width: 1400px; /* Ajuste conforme necessário */
+    margin: 0 auto; /* Centraliza horizontalmente */
 }
 
 .course-video {
@@ -142,6 +152,10 @@ font-size: 24px;
 color: #FF8C00;
 margin-top: 20px;
 font-size: 20px;
+}
+
+.course-description h2{
+    text-align: center;
 }
 
 .placeholder-image {
@@ -219,10 +233,54 @@ footer {
     background-color: #444;
 }
 
+.course-description {
+    
+    margin-top: 50px;
+    align-items: center;
+}
+
+.slider-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    transition: transform 1s ease;
+    width: 100%;
+}
+
+.slide {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    min-width: 100%;
+}
+
+.slide img {
+    max-width: 200px;
+    height: auto;
+    margin-right: 30px;
+}
+
+.description {
+    color: #333;
+    background-color: #f5f5f5;
+    padding: 10px;
+    border-radius: 8px;
+}
+
 /* não consigo fazer isso funcionar, fds */
 
 
-/* .container {
+ /* .container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -245,7 +303,7 @@ footer {
 .ad-area img{
     width: 50%;
     height: 50%;
-}
+} */
 
 .nav-button {
     background-color: #007BFF;
@@ -258,17 +316,18 @@ footer {
 
 .nav-button:hover {
     background-color: #0056b3;
-} */
+} 
 
-/* .card {
+  .card {
     background-color: #1C1C1C;
     color: white;
-    width: 250px;
+    width: 50vh;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     text-align: center;
-    
+    display: flex; /* Para centralizar o conteúdo da card */
+    flex-direction: column; /* Organiza o conteúdo em coluna */
 }
 
 .card .preco {
@@ -292,7 +351,13 @@ footer {
 .card .formas-pagamento {
     font-size: 16px;
     margin: 10px 0;
-    text-align: left;
+    text-align: center;
+}
+
+.card .formas-pagamento .separar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 .formas-pagamento img {
@@ -315,4 +380,4 @@ footer {
 
 .card .btn-comprar:hover {
     background-color: #E65C00;
-} */
+} 

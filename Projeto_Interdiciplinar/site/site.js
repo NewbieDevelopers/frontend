@@ -20,3 +20,25 @@
 //     currentAdIndex = (currentAdIndex - 1 + ads.length) % ads.length;
 //     showAd(currentAdIndex);
 // }
+
+
+
+let currentSlide = 0;
+const slides = document.querySelectorAll('.slide');
+const totalSlides = slides.length;
+
+function showSlide(index) {
+    const slider = document.querySelector('.slider');
+    if (index >= totalSlides) {
+        currentSlide = 0;
+    } else {
+        currentSlide = index;
+    }
+    slider.style.transform = `translateX(-${currentSlide * 100}%)`;
+}
+
+function autoSlide() {
+    showSlide(currentSlide + 1);
+}
+
+setInterval(autoSlide, 4000); 
